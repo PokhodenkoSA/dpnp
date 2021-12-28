@@ -16,7 +16,8 @@ requirements:
       - tbb-devel
       - wheel
     build:
-      - {{ compiler('dpcpp') }}
+      - {{ compiler('dpcpp') }} {{ dpcpp }}
+      - dpl-include {{ dpcpp }}
     run:
       - python
       - dpctl

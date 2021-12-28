@@ -11,7 +11,7 @@ requirements:
       - numpy 1.19
       - cython
       - cmake 3.19
-      - dpctl >=0.10
+      - dpctl {{ dpctl }}
       - mkl-devel-dpcpp
       - tbb-devel
       - wheel
@@ -19,7 +19,7 @@ requirements:
       - {{ compiler('dpcpp') }}
     run:
       - python
-      - dpctl >=0.10
+      - dpctl
       - dpcpp_cpp_rt >=2021.1.1
       - mkl >=2021.1.1
       - mkl-dpcpp >=2021.1.1

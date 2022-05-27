@@ -2,6 +2,8 @@ mkl_dpcpp:
   - 2021.4
 
 pin_run_as_build:
+    dpctl:
+      max_pin: x.x
     mkl-dpcpp:
       max_pin: x.x
 
